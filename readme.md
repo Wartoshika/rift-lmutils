@@ -7,26 +7,26 @@ Ein Lib-Addon f체r verschiedene Lm* Addons. Es stellt grundlegende Funktionen f�
 Funktionen
 ===========
 
-`LmUtils.tableLength(table): number`
+**`LmUtils.tableLength(table): number`**
 
     Gibt die Anzahl der Elemente im 체bergebenen Table zur체ck.
 
     table --- Die Tabelle (Datentyp Table)
 
-`LmUtils.tableHasValue(table, value): boolean`
+**`LmUtils.tableHasValue(table, value): boolean`**
 
     Pr체ft ob im angegebenen Table der 체bergebene Wert vorhanden ist. Keys des Tables werden ignoriert.
 
     table --- Die Tabelle (Datentyp Table)
     value --- Der Wert nach dem gesucht werden soll (Datentyp Mixed)
 
-`LmUtils.round(wert): number`
+**`LmUtils.round(wert): number`**
 
     Aktuell ein alias f체r `math.floor`.
 
     wert --- Die Nummer (Datentyp Number)
 
-`LmUtils.findTableKey(table, value): string`
+**`LmUtils.findTableKey(table, value): string`**
     
     Sucht im Table nach dem 체bergebenen Wert und gibt den Key zur체ck.
 
