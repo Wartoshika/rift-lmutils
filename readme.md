@@ -32,3 +32,16 @@ Funktionen
 
     table --- Die Tabelle (Datentyp Table)
     value --- Der Wert nachdem gesucht werden soll (Datentyp Mixed)
+
+**`LmUtils.tablesAreEqual(table, table)`**
+
+    Prueft ob zwei Tabellen gleich sind. Prüft nicht die Reihenfolge oder Referenzen.
+
+    table --- Die erste Tabelle (Datentyp Table)
+    table --- Die zweite Tabelle (Datentyp Table)
+
+**`LmUtils.getTableKeys(table)`**
+
+    Gibt alle Keys der Tabelle zurück.
+
+    table --- Die Tabelle (Datentyp Table)
