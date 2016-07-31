@@ -10,7 +10,7 @@ end
 
 -- ala in_array
 function LmUtils.tableHasValue (tab, val)
-    for index, value in ipairs (tab) do
+    for index, value in pairs (tab) do
         if value == val then
             return true
         end
