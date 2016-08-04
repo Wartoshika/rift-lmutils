@@ -45,3 +45,16 @@ Funktionen
     Gibt alle Keys der Tabelle zurück.
 
     table --- Die Tabelle (Datentyp Table)
+
+**`LmUtils.tableReduce(table, function)`**
+
+    Veraendert die Tabelle via uebergegener callbackfunktion
+
+    table   --- Die Tabelle (Datentyp Table)
+    function -- Die Iterierungsfunktion (Datentyp Function(vorher, aktuell))
+
+**`LmUtils.copyTable(table)`**
+
+    Erstellt eine Kopie der Tabelle ohne Referenz
+
+    table   --- Die Tabelle (Datentyp Table)

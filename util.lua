@@ -79,3 +79,30 @@ function LmUtils.getTableKeys(t)
     return keys
 
 end
+
+-- iteriert ueber ein array und ruft eine callbackfunction fuer anpassung
+-- thanks to katspaugh@http://stackoverflow.com/questions/8695378/how-to-sum-a-table-of-numbers-in-lua
+function LmUtils.tableReduce(table, callback)
+
+    local tbl
+    for k, v in ipairs(table) do
+        if 1 == k then
+            tbl = v
+        else
+            tbl = callback(tbl, v)
+        end 
+    end 
+    return tbl 
+end
+
+-- kopiert eine tabelle ohne verweise
+-- thanks to Tyler@http://stackoverflow.com/questions/640642/how-do-you-copy-a-lua-table-by-value
+function LmUtils.copyTable(obj, seen)
+  if type(obj) ~= 'table' then return obj end
+  if seen and seen[obj] then return seen[obj] end
+  local s = seen or {}
+  local res = setmetatable({}, getmetatable(obj))
+  s[obj] = res
+  for k, v in pairs(obj) do res[LmUtils.copyTable(k, s)] = LmUtils.copyTable(v, s) end
+  return res
+end

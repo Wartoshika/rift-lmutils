@@ -3,7 +3,7 @@ Name = "LooM Utils"
 Description = "Ein Bibliothek fuer meine Addons"
 Author = "Wartoshika@Brutwacht"
 Email = "oliverwarrings@freenet.de"
-Version = "1.1"
+Version = "1.2"
 Environment = "3.7"
 
 RunOnStartup = {
